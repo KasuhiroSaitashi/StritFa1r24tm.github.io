@@ -1,0 +1,30 @@
+body{
+	font-family: consolas;
+	text-align: center;
+	background: black;
+	color: #fff;
+}
+img{
+	width: 100px;
+	height: 100px;
+	margin-top: 45%;
+}
+.f{
+	display: inline-block;
+}
+.blink1{
+
+	display: inline-block;
+}
+.blink1 { 
+  animation-delay: 0.2s;
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; 
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

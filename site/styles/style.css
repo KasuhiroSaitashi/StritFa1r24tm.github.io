@@ -1,0 +1,53 @@
+body{
+	font-family: consolas;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+.g{
+	text-align: center;
+}
+.boxM{
+	position: absolute;
+	z-index: -1;
+	width: 120px;
+	height: 150px;
+	background:#1e1c1f;
+}
+.h{
+	color:#fff;
+	text-align: center;
+	width: 100px;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+ 	text-decoration: none;
+ 	display: block;
+ 	
+}
+
+.h::before{ 
+	content: '';
+	display: block;
+	right: 50%;
+	width: 100%;
+	height: 1px;
+	transform: scaleX(0);
+	background: #7a1094;
+	transition: all 0.5s;
+}
+.h:hover::before{
+transform: scaleX(1);
+}
+.h::after{ 
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	transform: scaleX(0);
+	background: #7a1094;
+	transition: all 0.5s;
+}
+.h:hover::after{
+transform: scaleX(1);
+}
